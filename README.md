@@ -19,6 +19,7 @@ Unlike most hobbyist drones that rely on prebuilt flight controller firmware (Be
 
 ## ⚡ Wiring Diagram
 <img width="1307" height="805" alt="image" src="https://github.com/user-attachments/assets/c730b36d-18da-4402-9e17-9dd2fa1ceded" />
+
 | # | Arduino --> MPU9250 |   |             |
 | - | ----------------- | - | ----------- |
 |   | **Arduino**       | → | **MPU9250** |
