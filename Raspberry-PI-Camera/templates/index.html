@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>USB Camera Stream</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Raspberry PI Camera Transmission</h1>
+    <div class="video-container">
+        <img src="/video_feed"
+             alt="Live Camera Feed"
+             width="{{ Display_WIDTH }}"
+             height="{{ Display_HEIGHT }}">
+    </div>
+</body>
