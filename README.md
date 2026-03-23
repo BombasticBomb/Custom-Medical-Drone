@@ -7,7 +7,7 @@ This is my hack club project to build a quadcopter from scratch with a custom IM
 <img width="1001" height="719" alt="image" src="https://github.com/user-attachments/assets/24605bc7-c428-4ba1-9c08-294bb76b4471" />
 
  If looking for my 3D model to review and approve my project, please look in the releases section. Due to the large file size of the .step file when extracted from the original STL file, it had to be uploaded to releases.
- <img width="1270" height="580" alt="image" src="https://github.com/user-attachments/assets/6970f5e0-acf0-4829-80f5-556754bd7835" />
+<img width="1287" height="762" alt="image" src="https://github.com/user-attachments/assets/9f28285b-bbc9-417f-9daf-f7c4b00d5090" />
 
  ## What Makes This Project Unique
 Unlike most hobbyist drones that rely on prebuilt flight controller firmware (Betaflight), my project implements a fully custom flight controller using Arduino & mpu9250 that I had to research to actually learn how it works, and I am working on developing it into a fully functioning firmware. Along with that, I am utilizing a novel method to stream video transmission using a USB camera and the Raspberry Pi using a Python script that uses OpenCV to play video on a web dashboard hosted in Flask and streamed with Flask-socketio.
