@@ -8,9 +8,6 @@ A major focus of this project is the 📷 Raspberry Pi Camera system — used fo
 <img width="1441" height="861" alt="image" src="https://github.com/user-attachments/assets/348d570b-e662-4fa5-9256-1b81f3778fbd" />
 
 
- If looking for my 3D model to review and approve my project, please look in the releases section. Due to the large file size of the .step file when extracted from the original STL file, it had to be uploaded to releases.
-<img width="1287" height="762" alt="image" src="https://github.com/user-attachments/assets/9f28285b-bbc9-417f-9daf-f7c4b00d5090" />
-
 ## 💡 Inspiration
 This is my hack club project to build a quadcopter from scratch with a custom flight controller with Arduino &amp; MPU9250. Growing up, I'd watch many science and engineering videos online; I've always been a science kid who spends his time watching astronomy, engineering, etc type videos. And, I've seen many people make videos about making drones, and I'd dream, but I'll tell myself - "They're on another level, I cannot reach that yet". However, in 2026, in my 9th-grade year, I believe I finally have the capability and, of course, the passion to pull it off. I present my first attempt to build my own custom flight controller, as well as PID stabilization, as part of this drone project. I did this project to challenge myself in learning the ins and outs of how a quadcopter actually works, and also combine my skills in hardware, electronics, and embedded programming to create something unique and not just follow a tutorial.
 <img width="1302" height="674" alt="image" src="https://github.com/user-attachments/assets/8c574e85-890e-4739-a304-ef7fa4159d84" />
