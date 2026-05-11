@@ -1,6 +1,6 @@
 ## 🚁 Custom Drone Flight Controller
 Arduino + MPU9250 based Flight Controller for Quadcopter!
-This project is a custom-built quadcopter drone that uses an Arduino-based flight controller with an MPU9250 IMU for stabilization. The system is designed from scratch and I am currently working on the hardware, firmware, and the system architecture utilizing a combination of Arduino & Raspberry PI.
+This project is a custom-built quadcopter drone that uses an Arduino flight controller with an MPU9250 IMUn. The system is designed from scratch and I am currently working on the hardware, firmware, and the system architecture utilizing a combination of Arduino & Raspberry PI.
 A major focus of this project is the 📷 Raspberry Pi Camera system — used for:
 -🎥 Real-time video streaming
 
@@ -14,10 +14,10 @@ This is my hack club project to build a quadcopter from scratch with a custom fl
 
 
  ## 🧠 What Makes This Project Unique
-Unlike most hobbyist drones that rely on prebuilt flight controller firmware (Betaflight), my project implements a fully custom flight controller using Arduino & mpu9250 that I had to do a lot of research to actually learn how it works, and I am working on developing it into a fully functioning firmware. Along with that, I am utilizing a novel method to stream video transmission using a USB camera and the Raspberry Pi using a Python script that uses OpenCV to play video on a web dashboard hosted in Flask and streamed with Flask-socketio. This is a unique method as I offload the low-level control to the Arduino, while I implement advanced features such as a camera (and hopefully in the future GPS, ultrasonic sensors, etc) through the more powerful Raspberry Pi, which actually runs the Linux Operating System.
-- Arduino --> Handles low-level flight control and sensor processing
-- Raspberry Pi --> Handles higher-level features like video streaming
-**Note: The utilization of onboard wifi on the Raspberry Pi does mean the video transmission range is limited, and beyond that range, we have to rely solely on radio.
+Unlike most custom drones that rely on preprogrammed ready-to-fly flight controllers, my project uses a fully custom flight controller using Arduino & mpu9250 that I had to do a lot of research to actually learn how it works, and I am working on developing it into a fully functioning firmware. Along with that, I am utilizing a novel method to stream video transmission using a USB camera and the Raspberry Pi using a Python script that uses OpenCV to play video on a web dashboard hosted in Flask and streamed with Flask-socketio. This is a unique method as I offload the low-level control to the Arduino, while I implement advanced features such as a camera (and hopefully in the future GPS, ultrasonic sensors, etc) through the more powerful Raspberry Pi, which actually runs the Linux Operating System.
+- Arduino --> Does the low-level flight control and sensor fusion
+- Raspberry Pi --> Handles more resource-intensive features like video streaming
+**Note: Using the onboard wifi on the Raspberry Pi does mean the video transmission range is limited, and beyond that range, we have to rely solely on radio.
 
 ## ⚡ Wiring Diagram
 <img width="1307" height="805" alt="image" src="https://github.com/user-attachments/assets/c730b36d-18da-4402-9e17-9dd2fa1ceded" />
@@ -52,7 +52,7 @@ Custom PCB:
 <img width="799" height="647" alt="image" src="https://github.com/user-attachments/assets/474f7709-70ed-4500-a96a-6f5e19cf00ba" />
 <img width="1065" height="599" alt="image" src="https://github.com/user-attachments/assets/d90e29e1-4f88-41d8-8d7b-a8cb62e65f28" />
 
-Note: Brushless motors need Electronic Speed Controllers (ESCs) to operate. The ESC's themselves are part of the wiring diagram and are powered by the Arduino. It is crucial to note the motors themselves, and the Arduino also gets power from the main battery. The reason this configuration was required is that the Arduino converts the 11.1V on the 3S battery to 5V and supplies it to the other electronics.
+Note: The ESC's themselves are part of the wiring diagram and are powered by the Arduino. It is crucial to note the motors themselves, and the Arduino also gets power from the main battery. The reason this configuration was required is that the Arduino converts the 11.1V on the 3S battery to 5V and supplies it to the other electronics.
 
 ## 📦 Bill of Materials
 
